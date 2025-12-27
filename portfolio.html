@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jyotiprakash Rout - Portfolio</title>
+    <style>
+        body {
+            background: #ffffff;
+            color: #000000;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 40px auto;
+            max-width: 800px;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        body[data-theme="dark"] {
+            background: #000000;
+            color: #e0e0e0;
+        }
+
+        body[data-theme="dark"] a {
+            color: #6eb5ff;
+        }
+
+        body[data-theme="dark"] a:visited {
+            color: #c499ff;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 20px 0 10px 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 30px 0 10px 0;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 15px 0 5px 0;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        a {
+            color: #0000ee;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: #551a8b;
+        }
+
+        .job-section {
+            max-width: 700px;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 40px;
+            text-align: left;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #000000;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        body[data-theme="dark"] hr {
+            border-top: 1px solid #333333;
+        }
+
+        .controls {
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .controls button {
+            background: #e0e0e0;
+            border: 2px outset #ffffff;
+            padding: 2px 8px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 14px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+        body[data-theme="dark"] .controls button {
+            background: #1a1a1a;
+            border: 2px outset #333333;
+            color: #e0e0e0;
+        }
+
+        .controls button:active {
+            border-style: inset;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            font-style: italic;
+            margin: 5px 0 15px 0;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 16px;
+            background: #000000;
+            animation: blink 1s step-end infinite;
+            vertical-align: text-bottom;
+            margin-left: 2px;
+        }
+
+        body[data-theme="dark"] .cursor {
+            background: #e0e0e0;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        .job-meta {
+            font-style: italic;
+            color: #666666;
+            margin: 5px 0;
+        }
+
+        body[data-theme="dark"] .job-meta {
+            color: #888888;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        td {
+            padding: 8px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        td:first-child {
+            text-align: right;
+            padding-right: 15px;
+            white-space: nowrap;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        body:not([data-lang="en"]) .lang-en { display: none; }
+        body:not([data-lang="nl"]) .lang-nl { display: none; }
+
+        @media (max-width: 600px) {
+            body {
+                margin: 20px auto;
+                padding: 0 15px;
+            }
+            
+            table {
+                font-size: 14px;
+            }
+            
+            td {
+                display: block;
+                text-align: center;
+            }
+            
+            td:first-child {
+                text-align: center;
+                padding-right: 8px;
+            }
+
+            .job-section {
+                padding: 0 10px;
+            }
+
+            ul {
+                padding-left: 25px;
+            }
+        }
+    </style>
+</head>
+<body data-lang="en" data-theme="light">
+
+<div class="controls">
+    [<button onclick="toggleTheme()"><span id="themeBtn">Dark Mode</span></button>]
+    [<button onclick="toggleLanguage()"><span id="langBtn">Nederlands</span></button>]
+</div>
+
+<h1>Jyotiprakash Rout</h1>
+
+<p class="subtitle">
+    <span class="lang-en">Software Developer @ Parkd</span>
+    <span class="lang-nl">Softwareontwikkelaar @ Parkd</span>
+    <span class="cursor"></span>
+</p>
+
+<p>
+    <strong class="lang-en">Location:</strong>
+    <strong class="lang-nl">Locatie:</strong>
+    <span class="lang-en">Antwerp, Flanders, Belgium</span>
+    <span class="lang-nl">Antwerpen, Vlaanderen, België</span>
+    <br>
+    <strong class="lang-en">Email:</strong>
+    <strong class="lang-nl">E-mail:</strong>
+    <a href="mailto:jyotiprakashrout434@gmail.com">jyotiprakashrout434@gmail.com</a>
+    <br>
+    <strong class="lang-en">Links:</strong>
+    <strong class="lang-nl">Links:</strong>
+    <a href="https://www.linkedin.com/in/jyotiprakash-rout-064263125/" target="_blank">LinkedIn</a> | 
+    <a href="https://github.com/Jyoti-prakash-rout" target="_blank">GitHub</a>
+</p>
+
+<hr>
+
+<h2 class="lang-en">About</h2>
+<h2 class="lang-nl">Profiel</h2>
+
+<p class="lang-en">
+    Software Engineer with over 8 years of experience building scalable enterprise applications and reactive microservices. I specialize in Java, Spring Boot, and AWS, with a strong focus on core Computer Science fundamentals. I believe that <em>"A programming language is just a tool, fundamentals and concepts always remain the same."</em>
+</p>
+
+<p class="lang-nl">
+    Software Engineer met meer dan 8 jaar ervaring in het bouwen van schaalbare bedrijfsapplicaties en reactieve microservices. Ik ben gespecialiseerd in Java, Spring Boot en AWS, met een sterke focus op fundamentele informaticaconcepten. Mijn overtuiging is: <em>"Een programmeertaal is slechts een middel; de fundamenten en concepten blijven altijd hetzelfde."</em>
+</p>
+
+<hr>
+
+<h2 class="lang-en">Work Experience</h2>
+<h2 class="lang-nl">Werkervaring</h2>
+
+<div class="job-section">
+    <h3 class="lang-en">Software Developer</h3>
+    <h3 class="lang-nl">Softwareontwikkelaar</h3>
+    <p class="job-meta">
+        Parkd | <span class="lang-en">Jan 2024 - Present</span><span class="lang-nl">jan 2024 - heden</span>
+    </p>
+    <ul>
+        <li class="lang-en">Leveraged functional and event-driven programming paradigms to build features using Java 17, Vavr, Spring Boot, and AWS SQS/SNS</li>
+        <li class="lang-nl">Toepassing van functionele en event-driven programmeerparadigma's voor feature-ontwikkeling met Java 17, Vavr, Spring Boot en AWS SQS/SNS</li>
+        
+        <li class="lang-en">Secured partner APIs using Amazon Cognito m2m authentication flows with Spring Security</li>
+        <li class="lang-nl">Beveiliging van partner-API's middels Amazon Cognito M2M-authenticatiestromen en Spring Security</li>
+        
+        <li class="lang-en">Created and managed AWS infrastructure resources using Terraform</li>
+        <li class="lang-nl">Opzetten en beheren van AWS-infrastructuur via Terraform (IaC)</li>
+        
+        <li class="lang-en">Built high-volume IoT data pipelines using Kinesis Firehose and Redshift, processing over 20,000 events per minute</li>
+        <li class="lang-nl">Ontwikkeling van hoog-volume IoT-datapijplijnen met Kinesis Firehose en Redshift (verwerking van >20.000 events/minuut)</li>
+
+        <li class="lang-en">Maintained the ELK stack including ILM policies and Fluent-bit configuration</li>
+        <li class="lang-nl">Onderhoud van de ELK-stack, inclusief configuratie van ILM-beleid en Fluent-bit</li>
+
+        <li class="lang-en">Worked on migrations to Spring Boot 3 and maintained Bitbucket CI/CD pipelines</li>
+        <li class="lang-nl">Uitvoering van migraties naar Spring Boot 3 en beheer van Bitbucket CI/CD-pipelines</li>
+    </ul>
+</div>
+
+<div class="job-section">
+    <h3 class="lang-en">Software Development Engineer</h3>
+    <h3 class="lang-nl">Software Development Engineer</h3>
+    <p class="job-meta">OneSpan | <span class="lang-en">Apr 2023 - Jan 2024</span><span class="lang-nl">apr 2023 - jan 2024</span></p>
+    <ul>
+        <li class="lang-en">Developed FIDO-based password-less authentication systems using Java 17 and Spring Boot on AWS</li>
+        <li class="lang-nl">Ontwikkeling van FIDO-gebaseerde wachtwoordloze authenticatiesystemen met Java 17 en Spring Boot op AWS</li>
+        
+        <li class="lang-en">Enhanced the OneSpan Cloud Authentication (OCA) platform, handling billions of transactions annually for global financial institutions</li>
+        <li class="lang-nl">Optimalisatie van het OneSpan Cloud Authentication (OCA) platform, verantwoordelijk voor miljarden jaarlijkse transacties voor wereldwijde financiële instellingen</li>
+        
+        <li class="lang-en">Conducted research and integration of FIDO protocols with hardware tokens and mobile devices</li>
+        <li class="lang-nl">Onderzoek naar en integratie van FIDO-protocollen met hardwaretokens en mobiele apparaten</li>
+        
+        <li class="lang-en">Created and managed AWS infrastructure resources using Terraform</li>
+        <li class="lang-nl">Opzetten en beheren van AWS-infrastructuur resources met behulp van Terraform</li>
+    </ul>
+</div>
+
+<div class="job-section">
+    <h3 class="lang-en">Data Engineer</h3>
+    <h3 class="lang-nl">Data Engineer</h3>
+    <p class="job-meta">Sentiance | <span class="lang-en">Feb 2021 - Jan 2023</span><span class="lang-nl">feb 2021 - jan 2023</span></p>
+    <ul>
+        <li class="lang-en">Engineered a geo-spatial engine serving restricted map tile data to mobile SDKs using OverpassQL</li>
+        <li class="lang-nl">Ontwikkeling van een geo-spatial engine voor het leveren van specifieke kaartdata aan mobiele SDK's via OverpassQL</li>
+        
+        <li class="lang-en">Developed real-time Kafka Streams pipelines for processing large-scale telematics and sensor data</li>
+        <li class="lang-nl">Realisatie van real-time Kafka Streams-pipelines voor de verwerking van grootschalige telematica- en sensordata</li>
+        
+        <li class="lang-en">Worked on migrating legacy data pipelines, improving processing efficiency by over 25%</li>
+        <li class="lang-nl">Migratie van legacy-datapijplijnen, resulterend in een efficiëntieverbetering van meer dan 25%</li>
+        
+        <li class="lang-en">Collaborated with data scientists to productize complex machine learning models into scalable microservices</li>
+        <li class="lang-nl">Productie-gereed maken van complexe machine learning-modellen in schaalbare microservices, in samenwerking met data scientists</li>
+    </ul>
+</div>
+
+<div class="job-section">
+    <h3 class="lang-en">Software Engineer I</h3>
+    <h3 class="lang-nl">Software Engineer I</h3>
+    <p class="job-meta">S&P Global Market Intelligence | <span class="lang-en">Dec 2019 - Jan 2021</span><span class="lang-nl">dec 2019 - jan 2021</span></p>
+    <ul>
+        <li class="lang-en">Built a real-time financial data streaming platform integrated with Xpressfeed™ using Java (Spring Boot), WebSockets, and Protocol Buffers</li>
+        <li class="lang-nl">Bouw van een real-time financieel datastreamingplatform geïntegreerd met Xpressfeed™, gebruikmakend van Java (Spring Boot), WebSockets en Protocol Buffers</li>
+        
+        <li class="lang-en">Optimized data delivery latency from 15 minutes to under 1 minute for high-velocity datasets</li>
+        <li class="lang-nl">Reductie van data-leveringstijd van 15 minuten naar minder dan 1 minuut voor high-velocity datasets</li>
+        
+        <li class="lang-en">Maintained and enhanced internal tools using Angular and Spring Boot</li>
+        <li class="lang-nl">Onderhoud en doorontwikkeling van interne tools met Angular en Spring Boot</li>
+        
+        <li class="lang-en">Integrated new financial datasets (Trucost, Bank Reg) into the Xpressfeed™ platform</li>
+        <li class="lang-nl">Integratie van nieuwe financiële datasets (Trucost, Bank Reg) in het Xpressfeed™ platform</li>
+    </ul>
+</div>
+
+<div class="job-section">
+    <h3 class="lang-en">Software Engineer</h3>
+    <h3 class="lang-nl">Software Engineer</h3>
+    <p class="job-meta">SoftPath Technologies LLC | <span class="lang-en">Nov 2017 - Dec 2019</span><span class="lang-nl">nov 2017 - dec 2019</span></p>
+    <ul>
+        <li class="lang-en">Developed microservices for the Veriflow platform using Java (Spring Boot), Solr, and Netflix OSS</li>
+        <li class="lang-nl">Ontwikkeling van microservices voor het Veriflow-platform met Java (Spring Boot), Solr en Netflix OSS</li>
+        
+        <li class="lang-en">Architected a serverless email processing solution using AWS SES, Lambda, and S3</li>
+        <li class="lang-nl">Architectuurontwerp van een serverless e-mailverwerkingsoplossing met AWS SES, Lambda en S3</li>
+        
+        <li class="lang-en">Optimized report generation engines, reducing processing time by up to 60%</li>
+        <li class="lang-nl">Optimalisatie van rapportage-engines, wat leidde tot 60% kortere verwerkingstijden</li>
+        
+        <li class="lang-en">Built client portals and adapters using Angular and Spring Boot REST APIs</li>
+        <li class="lang-nl">Bouw van klantportalen en adapters met behulp van Angular en Spring Boot REST API's</li>
+    </ul>
+</div>
+
+<hr>
+
+<h2 class="lang-en">Technical Skills</h2>
+<h2 class="lang-nl">Technische Vaardigheden</h2>
+
+<table>
+    <tr>
+        <td><strong class="lang-en">Languages:</strong><strong class="lang-nl">Talen:</strong></td>
+        <td><span class="lang-en">Java 17/21, SQL, Python 3 and Typescript (Former experience)</span><span class="lang-nl">Java 17/21, SQL, Python 3 en Typescript (Eerdere ervaring)</span></td>
+    </tr>
+    <tr>
+        <td><strong class="lang-en">Backend & Data:</strong><strong class="lang-nl">Backend & Data:</strong></td>
+        <td>Spring Boot, Kafka Streams, Vavr, Postgres</td>
+    </tr>
+    <tr>
+        <td><strong class="lang-en">Frontend:</strong><strong class="lang-nl">Frontend:</strong></td>
+        <td><span class="lang-en">Angular (Former experience)</span><span class="lang-nl">Angular (Eerdere ervaring)</span></td>
+    </tr>
+    <tr>
+        <td><strong class="lang-en">Cloud & DevOps:</strong><strong class="lang-nl">Cloud & DevOps:</strong></td>
+        <td><span class="lang-en">AWS (ECS, Cognito, Lambda, SQS/SNS, S3, Redshift, Firehose, Route 53), Terraform, Docker and Bitbucket Pipelines</span><span class="lang-nl">AWS (ECS, Cognito, Lambda, SQS/SNS, S3, Redshift, Firehose, Route 53), Terraform, Docker en Bitbucket Pipelines</span></td>
+    </tr>
+</table>
+
+<hr>
+
+<p>
+    <small>
+        <span class="lang-en">Last updated: December 2025</span>
+        <span class="lang-nl">Laatst bijgewerkt: december 2025</span>
+    </small>
+</p>
+
+<script>
+    function toggleTheme() {
+        const body = document.body;
+        const theme = body.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+        body.setAttribute('data-theme', theme);
+        document.getElementById('themeBtn').textContent = theme === 'light' ? 'Dark Mode' : 'Light Mode';
+        localStorage.setItem('theme', theme);
+    }
+
+    function toggleLanguage() {
+        const body = document.body;
+        const lang = body.getAttribute('data-lang') === 'en' ? 'nl' : 'en';
+        body.setAttribute('data-lang', lang);
+        document.documentElement.setAttribute('lang', lang);
+        document.getElementById('langBtn').textContent = lang === 'en' ? 'Nederlands' : 'English';
+        localStorage.setItem('language', lang);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+        const theme = localStorage.getItem('theme') || 'light';
+        const lang = localStorage.getItem('language') || 'en';
+        
+        document.body.setAttribute('data-theme', theme);
+        document.body.setAttribute('data-lang', lang);
+        document.documentElement.setAttribute('lang', lang);
+        
+        document.getElementById('themeBtn').textContent = theme === 'light' ? 'Dark Mode' : 'Light Mode';
+        document.getElementById('langBtn').textContent = lang === 'en' ? 'Nederlands' : 'English';
+    });
+</script>
+
+</body>
+</html>
