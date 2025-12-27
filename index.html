@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jyotiprakash Rout - Portfolio</title>
     <style>
+        * {
+            cursor: none !important;
+        }
+
         body {
             background: #ffffff;
             color: #000000;
@@ -15,6 +19,24 @@
             max-width: 800px;
             padding: 0 20px;
             text-align: center;
+        }
+
+        #cat-cursor {
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            font-size: 32px;
+            transform: translate(-50%, -50%);
+            animation: subtleFloat 3s ease-in-out infinite;
+        }
+
+        @keyframes subtleFloat {
+            0%, 100% {
+                transform: translate(-50%, -50%) rotate(-2deg) translateY(0px);
+            }
+            50% {
+                transform: translate(-50%, -50%) rotate(2deg) translateY(-3px);
+            }
         }
 
         body[data-theme="dark"] {
@@ -99,7 +121,6 @@
             padding: 2px 8px;
             font-family: 'Times New Roman', Times, serif;
             font-size: 14px;
-            cursor: pointer;
             margin: 0 5px;
         }
 
@@ -206,6 +227,8 @@
 </head>
 <body data-lang="en" data-theme="light">
 
+<div id="cat-cursor">🐱</div>
+
 <div class="controls">
     [<button onclick="toggleTheme()"><span id="themeBtn">Dark Mode</span></button>]
     [<button onclick="toggleLanguage()"><span id="langBtn">Nederlands</span></button>]
@@ -257,7 +280,8 @@
     <h3 class="lang-en">Software Developer</h3>
     <h3 class="lang-nl">Softwareontwikkelaar</h3>
     <p class="job-meta">
-        Parkd | <span class="lang-en">Jan 2024 - Present</span><span class="lang-nl">jan 2024 - heden</span>
+        Parkd | <span class="lang-en">Jan 2024 - Present</span><span class="lang-nl">jan 2024 - heden</span><br>
+        <span class="lang-en">Ghent, Flanders, Belgium</span><span class="lang-nl">Gent, Vlaanderen, België</span>
     </p>
     <ul>
         <li class="lang-en">Leveraged functional and event-driven programming paradigms to build features using Java 17, Vavr, Spring Boot, and AWS SQS/SNS</li>
@@ -283,7 +307,10 @@
 <div class="job-section">
     <h3 class="lang-en">Software Development Engineer</h3>
     <h3 class="lang-nl">Software Development Engineer</h3>
-    <p class="job-meta">OneSpan | <span class="lang-en">Apr 2023 - Jan 2024</span><span class="lang-nl">apr 2023 - jan 2024</span></p>
+    <p class="job-meta">
+        OneSpan | <span class="lang-en">Apr 2023 - Jan 2024</span><span class="lang-nl">apr 2023 - jan 2024</span><br>
+        <span class="lang-en">Brussels, Belgium</span><span class="lang-nl">Brussel, België</span>
+    </p>
     <ul>
         <li class="lang-en">Developed FIDO-based password-less authentication systems using Java 17 and Spring Boot on AWS</li>
         <li class="lang-nl">Ontwikkeling van FIDO-gebaseerde wachtwoordloze authenticatiesystemen met Java 17 en Spring Boot op AWS</li>
@@ -302,7 +329,10 @@
 <div class="job-section">
     <h3 class="lang-en">Data Engineer</h3>
     <h3 class="lang-nl">Data Engineer</h3>
-    <p class="job-meta">Sentiance | <span class="lang-en">Feb 2021 - Jan 2023</span><span class="lang-nl">feb 2021 - jan 2023</span></p>
+    <p class="job-meta">
+        Sentiance | <span class="lang-en">Feb 2021 - Jan 2023</span><span class="lang-nl">feb 2021 - jan 2023</span><br>
+        <span class="lang-en">Antwerp, Flanders, Belgium</span><span class="lang-nl">Antwerpen, Vlaanderen, België</span>
+    </p>
     <ul>
         <li class="lang-en">Engineered a geo-spatial engine serving restricted map tile data to mobile SDKs using OverpassQL</li>
         <li class="lang-nl">Ontwikkeling van een geo-spatial engine voor het leveren van specifieke kaartdata aan mobiele SDK's via OverpassQL</li>
@@ -321,7 +351,10 @@
 <div class="job-section">
     <h3 class="lang-en">Software Engineer I</h3>
     <h3 class="lang-nl">Software Engineer I</h3>
-    <p class="job-meta">S&P Global Market Intelligence | <span class="lang-en">Dec 2019 - Jan 2021</span><span class="lang-nl">dec 2019 - jan 2021</span></p>
+    <p class="job-meta">
+        S&P Global Market Intelligence | <span class="lang-en">Dec 2019 - Jan 2021</span><span class="lang-nl">dec 2019 - jan 2021</span><br>
+        <span class="lang-en">Hyderabad, India</span><span class="lang-nl">Hyderabad, India</span>
+    </p>
     <ul>
         <li class="lang-en">Built a real-time financial data streaming platform integrated with Xpressfeed™ using Java (Spring Boot), WebSockets, and Protocol Buffers</li>
         <li class="lang-nl">Bouw van een real-time financieel datastreamingplatform geïntegreerd met Xpressfeed™, gebruikmakend van Java (Spring Boot), WebSockets en Protocol Buffers</li>
@@ -340,10 +373,13 @@
 <div class="job-section">
     <h3 class="lang-en">Software Engineer</h3>
     <h3 class="lang-nl">Software Engineer</h3>
-    <p class="job-meta">SoftPath Technologies LLC | <span class="lang-en">Nov 2017 - Dec 2019</span><span class="lang-nl">nov 2017 - dec 2019</span></p>
+    <p class="job-meta">
+        SoftPath Technologies LLC | <span class="lang-en">Nov 2017 - Dec 2019</span><span class="lang-nl">nov 2017 - dec 2019</span><br>
+        <span class="lang-en">Hyderabad, India</span><span class="lang-nl">Hyderabad, India</span>
+    </p>
     <ul>
-        <li class="lang-en">Developed microservices for the Veriflow platform using Java (Spring Boot), Solr, and Netflix OSS</li>
-        <li class="lang-nl">Ontwikkeling van microservices voor het Veriflow-platform met Java (Spring Boot), Solr en Netflix OSS</li>
+        <li class="lang-en">Developed microservices for the Veriflow platform using Java (Spring Boot) and Solr</li>
+        <li class="lang-nl">Ontwikkeling van microservices voor het Veriflow-platform met Java (Spring Boot) en Solr</li>
         
         <li class="lang-en">Architected a serverless email processing solution using AWS SES, Lambda, and S3</li>
         <li class="lang-nl">Architectuurontwerp van een serverless e-mailverwerkingsoplossing met AWS SES, Lambda en S3</li>
@@ -390,6 +426,14 @@
 </p>
 
 <script>
+    // Cat cursor functionality
+    const catCursor = document.getElementById('cat-cursor');
+    
+    document.addEventListener('mousemove', (e) => {
+        catCursor.style.left = e.clientX + 'px';
+        catCursor.style.top = e.clientY + 'px';
+    });
+
     function toggleTheme() {
         const body = document.body;
         const theme = body.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
